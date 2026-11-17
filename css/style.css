@@ -1,37 +1,37 @@
-body {
+body {                        /*le corps de la page*/
     background-color: #0a1620;
     font-family: Arial, sans-serif;
     margin: 0px;
     width: 100%;
 }
 
-h2 {
+h2 {                         /*la couleur des titres h2*/
     color: #ffffff;
     text-align: left;
     margin: 0;
 }
 
-.yeseva-one-regular {
+.yeseva-one-regular {       /*Une des fonts*/
     font-family: 'Yeseva One', serif;
     font-weight: 100;
     font-style: normal;
 }
 
-.montserrat {
+.montserrat { /*Une des fonts*/
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-header {
+header {        /*Le haut de la page*/
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 20px;
     border-bottom: 1px solid #ffffff54;
     width: 100%;
 }
-
+                   /*adaptation du header à différent format*/
 @media all and (max-width: 425px) {
     header {
         flex-direction: column;
@@ -39,33 +39,33 @@ header {
     }
 }
 
-.point {
+.point {    /*Pour la couleur différente du titre*/
     color: #1bc298;
 }
 
-.icons {
+.icons {  /*emplacement des icons entre elles*/
     display: flex;
     align-items: center;
     row-gap: 10px;
 }
 
-.Mot {
+.Mot {    /*Pour la couleur différente du titre*/
     color: #1bc298;
 }
-
-h1 {
+ 
+h1 {        /*la couleur des titres h1*/
     color: #ffffff;
     margin: 0;
     font-size: 50px;
     width: 100%;
 }
-
+    /*adaptation des titres h1 à différent format*/
 @media all and (max-width: 768px) {
     h1 {
         font-size: 40px;
     }
 }
-
+              
 .conteneur {
     max-width: 1500px;
     margin: 0px auto;
@@ -84,7 +84,7 @@ p {
     margin-top: 70px;
     width: 100%;
 }
-
+        /*adaptation du menu à différent format*/
 @media all and (max-width: 768px) {
     .menu {
         gap: 3px;
@@ -99,18 +99,18 @@ p {
     text-align: center;
     padding: 5px 10px;
 }
-
+          /*adaptation du menu à différent format*/
 @media all and (max-width: 768px) {
     .menu a {
         font-size: 10px;
     }
-}
-
+}   /*animation menu*/
+            
 .menu a:hover {
     background-color: #1bc298;
 }
 
-.galerie {
+.galerie {    /*taille de toutes les images*/
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
@@ -125,20 +125,20 @@ p {
     border-radius: 0px;
     aspect-ratio: 1/1;
 }
-
+  /*animation image*/
 .galerie img:hover {
     transform: scale(1.20);
     transition: transform 0.3s ease;
 }
 
-/* Tablettes */
+/*adaptation des images au format tablette*/
 @media (max-width: 900px) {
     .galerie {
         grid-template-columns: repeat(5,minmax(0, 1fr));
     }
 }
 
-/* Téléphones */
+/*adaptation des images au format téléphone*/
 @media (max-width: 500px) {
     .galerie {
         grid-template-columns: repeat(3, minmax(0, 1fr));
